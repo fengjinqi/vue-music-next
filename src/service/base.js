@@ -14,6 +14,7 @@ const baseURL = process.env.NODE_ENV === 'production' ? 'http://ustbhuangyi.com/
 axios.defaults.baseURL = baseURL
 
 export function get(url, params) {
+
     return axios.get(url, {
         params
     }).then((res) => {

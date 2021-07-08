@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import { addClass, removeClass } from '@/assets/js/dom'
 
+
 const relativeCls = 'g-relative'
 
 export default function createLoadingLikeDirective(Comp) {
@@ -31,7 +32,7 @@ export default function createLoadingLikeDirective(Comp) {
       if (binding.value !== binding.oldValue) {
         binding.value ? append(el) : remove(el)
       }
-    }
+    },
   }
 
   function append(el) {
